@@ -13,12 +13,13 @@ h1 {
 
 }
 
+<style>
 .mouth{
 	padding: 20px;
 	position: absolute;
-<img src="smiley-mouth.jpg" alt="mouth" style="width:50px" class="mouth">
-
 }
+</style>
+<img src="smiley-mouth.jpg" alt="mouth" style="width:50px" class="mouth">
 
 .glasses{
 
