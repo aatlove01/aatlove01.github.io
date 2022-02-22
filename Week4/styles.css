@@ -9,31 +9,35 @@ h1 {
 	color: white;
 }
 
-.face{
 
-}
-
-<style>
-.mouth{
-	padding: 10px;
-	left: 50px;
-	width: 150px;
-	height: 50px;
-}
-</style>
-
-<style>
-.glass{
+/*thank you fei for the head code. could not get it for the life of me*/
+#head {
+	background-color: lightbrown;
 	position: absolute;
-	left: 50px;
-	width: 350px;
-	height: 150px;"
-
-
+	width:  250px;
+	height: 230px;
+	border-radius: 200px;
+	top: 50%;
+	left: 300%;
 }
+
+
+#glass{
+	position: absolute;
+	/*padding: 250px;*/
+	left: 300%;
+	width: 350px;
+	height: 200px;
+	
+}
+
+#mouth{
+	padding: 250px;
+	width:150px;
+	height:100px;	
+}
+
 </style>
-
-
 
 
 
