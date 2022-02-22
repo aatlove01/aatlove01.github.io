@@ -10,7 +10,7 @@ h1 {
 
 
 /*thank you fei for the head code. could not get it for the life of me*/
-#face {
+.oval {
 	background-color: lightbrown;
 	position: absolute;
 	width:  250px;
@@ -21,19 +21,29 @@ h1 {
 }
 
 
-#glass{
+.glass{
 	position: absolute;
-	padding: 250px;
-	left: 300%;
+	padding: 50px;
+	left: 13%;
 	width: 350px;
 	height: 200px;
 	
 }
 
-#mouth{
-	padding: 250px;
-	width:150px;
-	height:100px;	
+.mouth{
+	position: absolute;
+	padding: 150px;
+	left: 8%;
+	width:350px;
+	height:300px;	
+}
+
+.mouth:hover{
+	/*position: absolute;*/
+	/*padding: 150px;
+	left: 8%;*/
+	width:50px;
+	height:50px;
 }
 
 </style>
