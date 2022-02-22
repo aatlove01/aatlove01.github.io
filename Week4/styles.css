@@ -2,9 +2,26 @@ body {
 	background-color: powderblue;
 	font-family: Avantgarde, sans-serif;
 }
-h1{
+
+h1 {
 	text-align: center;
 	font-family: Avantgarde, sans-serif;
 	color: white;
 }
+
+.face{
+
+}
+
+.mouth{
+	padding: 20px;
+	position: absolute;
+<img src="smiley-mouth.jpg" alt="mouth" style="width:50px" class="mouth">
+
+}
+
+.glasses{
+
+}
+
 
