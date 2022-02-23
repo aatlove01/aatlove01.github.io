@@ -8,7 +8,6 @@ h1 {
 	color: white;
 }
 
-
 /*thank you fei for the head code. could not get it for the life of me*/
 .oval {
 	background-color: #C68863;
@@ -20,6 +19,14 @@ h1 {
 	left: 16%;
 }
 
+.beanie{
+	position: absolute;
+	width: 620px;
+	height: 425px;
+	top: -1%;
+	left: 9%;
+
+}
 
 .glass{
 	position: absolute;
@@ -31,7 +38,6 @@ h1 {
 }
 
 .glass: hover{
-	display: none;
 	position: absolute;
 	padding: 50px;
 	left: 13%;
