@@ -15,7 +15,7 @@ h1 {
 	position: absolute;
 	width:  450px;
 	height: 525px;
-	border-radius: 40%;
+	border-radius: 45%;
 	top: 16%;
 	left: 16%;
 }
@@ -24,9 +24,9 @@ h1 {
 .glass{
 	position: absolute;
 	padding: 50px;
-	left: 13%;
-	width: 350px;
-	height: 200px;
+	left: 10%;
+	width: 450px;
+	height: 220px;
 	
 }
 
