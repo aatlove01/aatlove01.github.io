@@ -1,11 +1,10 @@
-/*dropMenu Code from https://www.youtube.com/watch?v=zUeG6VgdKSc&ab_channel=InventionTricks*/
-
-*,*:after,*:before{
-	box-sizing: border-box;  /*code from site*/
-}
+/*Portion of dropMenu Code taken from from https://www.youtube.com/watch?v=zUeG6VgdKSc&ab_channel=InventionTricks*/
 
 body{
 	background-color: white;
+  	padding-top: 140px;
+  	display: flex;
+  	justify-content: center;
 }
 
 .dropdownMenu{
@@ -13,19 +12,13 @@ body{
 	max-width: 200px;
 	margin: 110px auto;
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	margin-left: 38%;
-	min-height: 150vh;
-}
-.dropdownMenu select{
-	width: 200%;
+	min-height: 150px;
 }
 
-.dropdownMenu button{
-	background-color:turquoise ;
-	padding: 15px 25px;
-	color: white;
-	font-size: 20px;
+.dropdownMenu select{
+	width: 200%;
 }
 
 .title h1 {
@@ -35,3 +28,25 @@ body{
 	font-family: sans-serif;
 }
 
+.typewriter h1{
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .10em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+	}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
