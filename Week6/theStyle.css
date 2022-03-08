@@ -53,11 +53,11 @@ body{
   50% { border-color: orange; }
 }
 
-/*css for previous and next button from https://www.w3schools.com/howto/howto_css_next_prev.asp*/
-a {
+/*/*css for previous and next button from https://www.w3schools.com/howto/howto_css_next_prev.asp*/
+/*a {
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0;
 }
 
 a:hover {
@@ -72,10 +72,52 @@ a:hover {
 
 .next {
   background-color: #05AA8D;
-  color: white;
+  color: black;
 }
 
 .round {
   border-radius: 50%;
+}
+*/
+
+.maincontainer{
+	margin:0;
+  padding:0;
+  display:flex;
+  justify-content: center;
+  width:100vw;
+  height:100vh;
+}
+
+/*previous and next buttons bless this individual https://github.com/JoyZhu219/joy.github.io/blob/main/week006/Net.Art.css*/
+.buttonInfo{
+	width: 100vw;
+	height: 5vh;
+	z-index: 100;
+}
+
+.buttonInfo {
+	position: fixed;
+	top: 5px;
+	left: 5 px;
+}
+
+.buttonInfo .button{
+  color: black;
+  text-decoration: none;
+  margin: 20px;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+/*got from awesome font website which I got from https://github.com/JoyZhu219/joy.github.io/blob/main/week006/Net.Art.css*/
+
+i {
+	color: black;
+	font-size: 1.2rem;
 }
 
