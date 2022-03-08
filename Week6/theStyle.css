@@ -87,13 +87,13 @@ a:hover {
   padding:0;
   display:flex;
   justify-content: center;
-  width:100vw;
+  width: auto;
   height:100vh;
 }
 
-.box1{
+/*.box1{
 	position: absolute;
-}
+}*/
 
 /*previous and next buttons bless this individual https://github.com/JoyZhu219/joy.github.io/blob/main/week006/Net.Art.css*/
 .buttonInfo{
@@ -102,7 +102,7 @@ a:hover {
 	z-index: 100;
 }
 
-/*helpedwith the fixed positioning https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed*/
+/*helped with the fixed positioning https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed*/
 .buttonInfo {
 	position: fixed;
 	top: 5px;
