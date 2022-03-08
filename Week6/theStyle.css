@@ -21,18 +21,19 @@ body{
 	width: 200%;
 }
 
-.title h1 {
+h1 {
 	text-align: center;
-	margin-top: 150px;
-	font-size: 40px;
-	font-family: sans-serif;
+	margin-top: auto;
+	font-size: 35px;
+	font-family: serif;
 }
 
 /*typewriter effect from https://css-tricks.com/snippets/css/typewriter-effect/*/
 
+/*h1 for the landing page*/
 .typewriter h1{
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-  	border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid orange; /* The typwriter cursor */
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .10em; /* Adjust as needed */
@@ -40,6 +41,7 @@ body{
 	  typing 3.5s steps(40, end),
 	  blink-caret .75s step-end infinite;
 	}
+
 
 /* The typing effect */
 @keyframes typing {
@@ -89,6 +91,10 @@ a:hover {
   height:100vh;
 }
 
+.box1{
+	position: absolute;
+}
+
 /*previous and next buttons bless this individual https://github.com/JoyZhu219/joy.github.io/blob/main/week006/Net.Art.css*/
 .buttonInfo{
 	width: 100vw;
@@ -96,6 +102,7 @@ a:hover {
 	z-index: 100;
 }
 
+/*helpedwith the fixed positioning https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed*/
 .buttonInfo {
 	position: fixed;
 	top: 5px;
