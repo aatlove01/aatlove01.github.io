@@ -1,0 +1,9 @@
+body{
+  background-color: #FF3C3C;
+}
+
+/* Aligning p5.js canvas in HTML file shttps://stackoverflow.com/questions/28003634/center-align-a-javascript-script-on-a-html-page */
+canvas{
+  margin: 0 auto;
+  display: block;
+}
