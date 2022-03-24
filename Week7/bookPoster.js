@@ -22,7 +22,7 @@ function preload() {
     // i = 0,1,2,3,4,5,6,7
     //print(nf(i, 2)); //use nf to pad i with zeros.
     //i = nf(i, 2);
-    frames[i] = loadImage("assets/couple gif/frame_" + i + "_delay-0.03s.gif");
+    frames[i] = loadImage("assets/frame_" + i + "_delay-0.03s.gif");
     print("assets/frame_" + i + "_delay-0.03s.gif");
   }
     // I recomment using a walk cycle of less than 10 images.
