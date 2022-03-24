@@ -7,3 +7,21 @@ canvas{
   margin: 0 auto;
   display: block;
 }
+
+.heartRules{
+  position: absolute;
+  padding: 10px;
+  width: 50px;
+  height: 60px;
+  left:20%;
+  top:10%;
+}
+
+.heartBreak{
+  position: absolute;
+  padding: 10px;
+  width: 50px;
+  height: 60px;
+  left:20%;
+  top:10%;
+  }
