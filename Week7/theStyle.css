@@ -10,38 +10,35 @@ canvas{
 
 .heart{
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 10px;
-  width: 1000px;
-  height: 2000px;
+  width: 580px;
+  height: 380px;
   left:20%;
-  top:10%;
+  bottom:2%;
 }
 
 .heart{
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 8px;
+  /* display: flex; */
+  /* justify-content: center; */
+  padding: 10px;
   width: 580px;
   height: 380px;
   left:20%;
-  top:10%;
+  bottom:2%;
   }
 
   .heart:hover{
     display: none;
     position: absolute;
     /* display: flex; */
-    justify-content: center;
-    align-items: flex-end;
-    padding: 8px;
-    width: 680px;
-    height: 580px;
+    /* justify-content: center; */
+    padding: 10px;
+    width: 580px;
+    height: 380px;
     left:20%;
-    top:10%;
+    bottom:2%;
 
   }
