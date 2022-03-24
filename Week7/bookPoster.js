@@ -32,7 +32,7 @@ function preload() {
 
 function setup() {
   console.log("p5 is here!")
-  createCanvas(550, 650);
+  createCanvas(800, 650);
   imageMode(CENTER);
   frameRate(12);
 
