@@ -77,6 +77,7 @@ function counter(){
     theButton_5.style.visibility = "visible";
     console.log("button 5 appear");
     potatoEars7.style.visibility = "visibility"
+    potatoMouth6.style.visibility = "visible";
     count += 1;
     console.log(count);
   } else
@@ -89,6 +90,7 @@ function counter(){
     potatoEyes4.style.visibility = "visible";
     count += 1;
     console.log(count);
+    potatoTops8.style.visibility = "visible";
   } else
   if (count == 6){
     console.log('you clicked!');
@@ -97,6 +99,7 @@ function counter(){
     theButton_7.style.visibility = "visible";
     console.log("button 7 appear");
     potatoNose5.style.visibility = "visible";
+
     count += 1;
     console.log(count);
 
@@ -108,7 +111,6 @@ function counter(){
     count += 1;
     console.log(count);
     surpriseMessage.style.visibility = "visible";
-    potatoTops8.style.visibility = "visible";
     potatoMouth6.style.visibility = "visible";
   } else
   if (count == 8){
