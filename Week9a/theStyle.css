@@ -2,6 +2,69 @@ body{
   background-color: rgb(255,255,224);
 }
 
+#potatoBody{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#eyes{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#feet{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#mouth{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#arms{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+#ears{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+#nose{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+#hat{
+  visibility: hidden;
+  position: absolute;
+    top: 20px;
+    left: 350px;
+}
+#mustache{
+  visibility: hidden;
+    position: absolute;
+    top: 320px;
+    left: 350px;
+}
+
+.size{
+  width:  700px;
+}
+
 #message{
   visibility: hidden;
   color: white;

@@ -10,7 +10,18 @@ const theButton_4 = document.getElementById('button4');
 const theButton_5 = document.getElementById('button5');
 const theButton_6 = document.getElementById('button6');
 const theButton_7 = document.getElementById('button7');
+
 const surpriseMessage = document.getElementById('message');
+
+const potatoBody1 = document.getElementById('potatoBody');
+const potatoArms2 = document.getElementById('arms');
+const potatoFeet3 = document.getElementById('feet');
+const potatoEyes4 = document.getElementById('eyes');
+const potatoNose5 = document.getElementById('nose');
+const potatoMouth6 = document.getElementById('mouth');
+const potatoEars7 = document.getElementById('ears');
+const potatoTops8 = document.getElementById('hats');
+
 
 let theBody = document.querySelector('body');
 
@@ -24,6 +35,7 @@ theButton_6.addEventListener('click', counter);
 theButton_7.addEventListener('click', counter);
 surpriseMessage.addEventListener('click',counter);
 
+
 let count = 1;
 function counter(){
   // if (mouseIsPressed){
@@ -33,6 +45,7 @@ function counter(){
     console.log("I disappeared")
     theButton_2.style.visibility = "visible";
     console.log("button 2 appear");
+    potatoBody1.style.visibility = "visible";
     count += 1;
     console.log(count);
   } else
@@ -42,6 +55,8 @@ function counter(){
     console.log("I disappeared");
     theButton_3.style.visibility = "visible";
     console.log("button 3 appear");
+    potatoArms2.style.visibility = "visible";
+    mustache.style.visibility = "visible";
     count += 1;
     console.log(count);
   } else
@@ -51,6 +66,7 @@ function counter(){
     console.log("I disappeared");
     theButton_4.style.visibility = "visible";
     console.log("button 4 appear");
+    potatoFeet3.style.visibility = "visible";
     count += 1;
     console.log(count);
   } else
@@ -60,6 +76,7 @@ function counter(){
     console.log("I disappeared");
     theButton_5.style.visibility = "visible";
     console.log("button 5 appear");
+    potatoEars7.style.visibility = "visibility"
     count += 1;
     console.log(count);
   } else
@@ -69,6 +86,7 @@ function counter(){
     console.log("I disappeared");
     theButton_6.style.visibility = "visible";
     console.log("button 6 appear");
+    potatoEyes4.style.visibility = "visible";
     count += 1;
     console.log(count);
   } else
@@ -78,8 +96,10 @@ function counter(){
     console.log("I disappeared");
     theButton_7.style.visibility = "visible";
     console.log("button 7 appear");
+    potatoNose5.style.visibility = "visible";
     count += 1;
     console.log(count);
+
   } else
   if (count == 7){
     console.log('you clicked!');
@@ -88,6 +108,8 @@ function counter(){
     count += 1;
     console.log(count);
     surpriseMessage.style.visibility = "visible";
+    potatoTops8.style.visibility = "visible";
+    potatoMouth6.style.visibility = "visible";
   } else
   if (count == 8){
     count = 1;
