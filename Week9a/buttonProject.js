@@ -1,12 +1,16 @@
 console.log("The Button");
 
+
+// inspired by https://codenamemadison.github.io/button_assignment/
+
 const theButton_1 = document.getElementById('button');
-const theButton_2 = document.getElementById('button2')
+const theButton_2 = document.getElementById('button2');
 const theButton_3 = document.getElementById('button3');
-const theButton_4 = document.getElementById('button4')
+const theButton_4 = document.getElementById('button4');
 const theButton_5 = document.getElementById('button5');
-const theButton_6 = document.getElementById('button6')
-const theButton_7 = document.getElementById('button7')
+const theButton_6 = document.getElementById('button6');
+const theButton_7 = document.getElementById('button7');
+const surpriseMessage = document.getElementById('message');
 
 let theBody = document.querySelector('body');
 
@@ -18,6 +22,7 @@ theButton_4.addEventListener('click', counter);
 theButton_5.addEventListener('click', counter);
 theButton_6.addEventListener('click', counter);
 theButton_7.addEventListener('click', counter);
+surpriseMessage.addEventListener('click',counter);
 
 let count = 1;
 function counter(){
@@ -82,6 +87,7 @@ function counter(){
     console.log("I disappeared");
     count += 1;
     console.log(count);
+    surpriseMessage.style.visibility = "visible";
   } else
   if (count == 8){
     count = 1;

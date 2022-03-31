@@ -2,6 +2,24 @@ body{
   background-color: rgb(255,255,224);
 }
 
+#message{
+  visibility: hidden;
+  color: white;
+  font-family: helvetica;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 4px 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+
+}
+
 #button{
   padding:15px 32px;
   border-radius: 5px;
