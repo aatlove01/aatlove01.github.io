@@ -226,7 +226,7 @@ body{
   margin: 4px 2px;
   cursor: pointer;
   position: absolute;
-  left: 50%;
+  right: 50%;
   top: 2%;
 }
 

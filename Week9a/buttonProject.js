@@ -9,7 +9,7 @@ const theButton_3 = document.getElementById('button3');
 const theButton_4 = document.getElementById('button4');
 const theButton_5 = document.getElementById('button5');
 const theButton_6 = document.getElementById('button6');
-const theButton_7 = document.getElementById('button7');
+const theButton_7 = document.getElementById('button6');
 
 const surpriseMessage = document.getElementById('message');
 
@@ -20,7 +20,7 @@ const potatoEyes4 = document.getElementById('eyes');
 const potatoNose5 = document.getElementById('nose');
 const potatoMouth6 = document.getElementById('mouth');
 const potatoEars7 = document.getElementById('ears');
-const potatoTops8 = document.getElementById('hats');
+const potatoTops8 = document.getElementById('hat');
 
 
 let theBody = document.querySelector('body');
@@ -100,7 +100,7 @@ function counter(){
     console.log("button 7 appear");
     potatoNose5.style.visibility = "visible";
 
-    count += 1;
+    count = 7;
     console.log(count);
 
   } else
@@ -112,13 +112,8 @@ function counter(){
     console.log(count);
     surpriseMessage.style.visibility = "visible";
     potatoMouth6.style.visibility = "visible";
-  } else
-  if (count == 8){
-    count = 1;
-    console.log(count);
-}
 
-}
+}}
 // function buttonTwo(){
 //   console.log('you clicked!');
 //   theButton_2.style.visibility = "hidden";
