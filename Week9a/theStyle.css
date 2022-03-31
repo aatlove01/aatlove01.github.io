@@ -2,7 +2,7 @@ body{
   background-color: rgb(255,255,224);
 }
 
-.button{
+#button{
   padding:15px 32px;
   border-radius: 5px;
   background-color: orange;
@@ -16,11 +16,12 @@ body{
   cursor: pointer;
 }
 
-.button:hover{
+#button:hover{
   background-color: rgb(156, 280, 100);
 }
 
-.button2{
+#button2{
+  visibility: hidden;
   padding:15px 32px;
   border-radius: 5px;
   background-color: skyblue;
@@ -37,6 +38,116 @@ body{
   bottom: 10%;
 }
 
-.button2:hover{
+#button2:hover{
+  background-color: rgb(156, 280, 100);
+}
+
+#button3{
+  visibility: hidden;
+  padding:15px 32px;
+  border-radius: 5px;
+  background-color: pink;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+}
+
+#button3:hover{
+  background-color: rgb(156, 280, 100);
+}
+
+#button4{
+  visibility: hidden;
+  padding:15px 32px;
+  border-radius: 5px;
+  background-color: rgb(200,130,20);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 80%;
+  top: 30%;
+}
+
+#button4:hover{
+  background-color: rgb(156, 280, 100);
+}
+
+#button5{
+  visibility: hidden;
+  padding:15px 32px;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 6%;
+  bottom: 32%;
+}
+
+#button5:hover{
+  background-color: rgb(156, 280, 100);
+}
+
+#button6{
+  visibility: hidden;
+  padding:15px 32px;
+  border-radius: 5px;
+  background-color: rgb(200,230,320);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+
+#button6:hover{
+  background-color: rgb(156, 280, 100);
+}
+
+#button7{
+  visibility: hidden;
+  padding:15px 32px;
+  border-radius: 5px;
+  background-color: rgb(50,230,80);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 2%;
+}
+
+#button7:hover{
   background-color: rgb(156, 280, 100);
 }
