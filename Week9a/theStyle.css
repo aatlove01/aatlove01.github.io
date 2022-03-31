@@ -5,18 +5,19 @@ body{
 #message{
   visibility: hidden;
   color: white;
-  font-family: helvetica;
+  font-family: "Sofia",sans-serif;
   font-size: 50px;
   text-align: center;
   text-decoration: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   display: inline-block;
   margin: 4px 2px;
+  padding: 15px 32px;
   background-color: black;
   position: absolute;
   bottom: 10%;
-  left: 35%;
+  left: 32%;
 
 }
 
