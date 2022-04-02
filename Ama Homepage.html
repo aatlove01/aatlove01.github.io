@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- raining effect from https://github.com/CodMark/Colorful-Rain-Animation-Effects-using-Html-CSS-Vanilla-Javascript/blob/main/index.html -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" type="text/css" href="theStylehome.css" >
+    <script type="homepage.js"></script>
+    <title>Welcome to Ama's Webpage</title>
+  </head>
+  <body>
+    <main>
+
+      <!-- <div id="rectangle"></div> -->
+      <div><h1>WELCOME</h1></div>
+
+      <!-- redirecting pages using vanilla js and html/css https://www.codegrepper.com/code-examples/html/onclick+redirect+to+pages+vanilla+js  onclick="location.href= "name of file""-->
+      <button id="enterButton" onclick= "location.href ='AssignmentPage.html'">Enter Here!</button>
+
+      <!-- raining effect -->
+      <script>
+              function rain() {
+                  let amount = 300;
+                  let body = document.querySelector('body');
+                  let i = 0;
+                  while (i < amount) {
+                      let drop = document.createElement('i');
+                      let size = Math.random() * 5;
+                      let posx = Math.floor(Math.random() * window.innerWidth);
+                      let delay = Math.random() * -20;
+                      let duration = Math.random() * 5;
+
+                      drop.style.width = 0.2 + size + "px";
+                      drop.style.left = posx + 'px';
+                      drop.style.animationDelay = delay+'s';
+                      drop.style.animationDuration = 1 + duration+'s';
+                      body.appendChild(drop);
+                      i++
+                  }
+              }
+              rain();
+          </script>
+
+    </main>
+  </body>
+</html>

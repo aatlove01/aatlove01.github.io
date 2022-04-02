@@ -1,0 +1,401 @@
+body{
+  background-color: #963CBDFF;
+  font-family: "Sofia",cursive;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+/* ROW 1 */
+
+#rectangle1{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-top: 80px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle2{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 525px;
+  margin-top: 80px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle3{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1025px;
+  margin-top: 80px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle4{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1525px;
+  margin-top: 80px;
+  width: 350px;
+  height: 350px;
+}
+
+/* ROW 2 */
+
+#rectangle5{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-top: 500px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle6{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 525px;
+  margin-top: 500px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle7{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1025px;
+  margin-top: 500px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle8{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1525px;
+  margin-top: 500px;
+  width: 350px;
+  height: 350px;
+}
+
+/* ROW 3 */
+
+#rectangle9{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-top: 920px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle10{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 525px;
+  margin-top: 920px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle11{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1025px;
+  margin-top: 920px;
+  width: 350px;
+  height: 350px;
+}
+
+#rectangle12{
+  position: fixed;
+  background: white;
+  border-radius: 10px;
+  margin-left: 1525px;
+  margin-top: 920px;
+  width: 350px;
+  height: 350px;
+}
+
+#hw1{
+
+
+}
+#hw1 img{
+  position: fixed;
+  width: 310px;
+  height: 250px;
+  margin-left: 45px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#hw2{
+
+}
+
+#hw2 img{
+  position: fixed;
+  width: 310px;
+  height: 250px;
+  margin-left: 545px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#hw3{
+
+}
+
+#hw3 img{
+  position: fixed;
+  width: 310px;
+  height: 250px;
+  margin-left: 1045px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#hw4{
+
+}
+
+#hw4 img{
+  position: fixed;
+  width: 310px;
+  height: 250px;
+  margin-left: 1545px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+#hw5{
+
+}
+
+#hw5 img{
+  position: fixed;
+  border-radius: 10px;
+  margin-left: 45px;
+  margin-top: 510px;
+  width: 310px;
+  height: 250px;
+}
+
+#hw6{
+
+}
+
+#hw6 img{
+  position: fixed;
+  border-radius: 10px;
+  margin-left: 545px;
+  margin-top: 510px;
+  width: 310px;
+  height: 250px;
+}
+
+#hw7{
+
+}
+
+#hw7 img{
+  position: fixed;
+  border-radius: 10px;
+  margin-left: 1045px;
+  margin-top: 510px;
+  width: 310px;
+  height: 250px;
+}
+
+#hw8{
+
+}
+
+#hw8 img{
+  position: fixed;
+  border-radius: 10px;
+  margin-left: 1545px;
+  margin-top: 510px;
+  width: 310px;
+  height: 250px;
+}
+
+/* Assignment Titles */
+
+#hw1Title{
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 350px;
+}
+
+#hw2Title{
+  position: fixed;
+  margin-left: 560px;
+  margin-top: 350px;
+}
+
+#hw3Title{
+  position: fixed;
+  margin-left: 1060px;
+  margin-top: 350px;
+}
+
+#hw4Title{
+  position: fixed;
+  margin-left: 1590px;
+  margin-top: 350px;
+}
+
+#hw5Title{
+  position: fixed;
+  margin-left: 70px;
+  margin-top: 760px;
+}
+
+#hw6Title{
+  position: fixed;
+  margin-left: 600px;
+  margin-top: 760px;
+}
+
+#hw7Title{
+  position: fixed;
+  margin-left: 1130px;
+  margin-top: 760px;
+}
+
+#hw8Title{
+  position: fixed;
+  margin-left: 1545px;
+  margin-top: 760px;
+}
+
+/* BUTTONS to ACCESS ASSIGNMENT PAGES */
+#button{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  top: 42%;
+  left: 6%;
+  cursor: pointer;
+
+}
+
+#button2{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  top: 42%;
+  left: 33%;
+  cursor: pointer;
+}
+
+#button3{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  top: 42%;
+  right: 35%;
+cursor: pointer;
+}
+
+#button4{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  top: 42%;
+  right: 9%;
+  cursor: pointer;
+}
+
+#button5{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 10%;
+  left: 6%;
+  cursor: pointer;
+}
+
+#button6{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 10%;
+  left:33%;
+  cursor: pointer;
+}
+
+#button7{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 10%;
+  right:35%;
+  cursor: pointer;
+}
+
+#button8{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 10%;
+  right: 9%;
+  cursor: pointer;
+}
