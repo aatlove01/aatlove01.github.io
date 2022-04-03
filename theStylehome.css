@@ -25,6 +25,11 @@ h1 {
 
 }
 
+h2{
+  color:black;
+  text-shadow: 4px 4px 16px white;
+}
+
 #rectangle{
   position: absolute;
   background: #FFB8A4;
