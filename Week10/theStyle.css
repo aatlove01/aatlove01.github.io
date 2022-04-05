@@ -1,4 +1,385 @@
 
 body{
-  background-color: orange;
+  background-color: #FFD580
+  ;
+}
+
+/* button */
+#button{
+  position: absolute;
+  top: 20px;
+  right: 750px;
+  padding:10px 30px;
+  border-radius: 5px;
+  background-color: #CBC3E3;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
+}
+
+/* animating building with inspiration from https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3 */
+#building{
+  width: 950px;
+  height: 1050px;
+  position: absolute;
+  bottom: -1000px;
+  right: 210px;
+  display: none;
+}
+
+.growing{
+  animation-name: growing;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes growing {
+  0% { transform: translate(0px, -1000px);}
+  50% { transform: translate(0px, 500px);}
+  100% { transform: translate(0px, 1000px);}
+}
+
+/* scroll image */
+#scrollImg{
+  display: block;
+  position: absolute;
+  top:200px;
+  right:510px;
+  width:550px;
+  height:500px;
+}
+
+#quill{
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 510px;
+  width: 450px;
+  height: 400px;
+}
+
+
+/* talking image */
+#talking{
+  position: absolute;
+  width: 550px;
+  height: 630px;
+  top: 0;
+  left:-110px;
+
+}
+
+/* Animations resources https://www.geeksforgeeks.org/css-floating-animation/  https://www.w3schools.com/css/css3_animations.asp */
+
+#a{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  left: 25px;
+}
+
+.flyingAway_a{
+  animation-name: flyingAway_a;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_a {
+  0% { transform: translate(100px, 200px);}
+  50% { transform: translate(500px, 300px);}
+  100% { transform: translate(800px,350px);}
+}
+
+#b{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 150px;
+  left: 75px;
+}
+
+.flyingAway_b{
+  animation-name: flyingAway_b;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_b {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(500px, 350px);}
+  100% { transform: translate(800px,300px);}
+}
+
+#c{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 200px;
+  left: 55px;
+}
+
+.flyingAway_c{
+  animation-name: flyingAway_c;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_c {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,380px);}
+}
+
+#d{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 110px;
+  left: 80px;
+}
+
+.flyingAway_d{
+  animation-name: flyingAway_d;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_d {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,420px);}
+}
+
+#e{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 230px;
+  left: 50px;
+}
+
+.flyingAway_e{
+  animation-name: flyingAway_e;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_e {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 350px);}
+  100% { transform: translate(800px,420px);}
+}
+
+#f{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 193px;
+  left: 18px;
+}
+
+.flyingAway_f{
+  animation-name: flyingAway_f;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_f {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,520px);}
+}
+
+#g{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+
+.flyingAway_g{
+  animation-name: flyingAway_g;
+  animation-duration: 11s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_g {
+  0% { transform: translate(100px, 350px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,520px);}
+}
+
+#h{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 80px;
+  left: 27px;
+}
+
+.flyingAway_h{
+  animation-name: flyingAway_h;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_h {
+  0% { transform: translate(100px, 290px);}
+  50% { transform: translate(550px, 480px);}
+  100% { transform: translate(800px,310px);}
+}
+
+#i{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 159px;
+  left: 28px;
+}
+
+.flyingAway_i{
+  animation-name: flyingAway_i;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_i {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,320px);}
+}
+
+#j{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 240px;
+  left: 96px;
+}
+
+.flyingAway_j{
+  animation-name: flyingAway_j;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_j {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 550px);}
+  100% { transform: translate(800px,600px);}
+}
+
+#m{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 170px;
+  left: 10px;
+}
+
+.flyingAway_m{
+  animation-name: flyingAway_m;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_m {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 480px);}
+  100% { transform: translate(800px,320px);}
+}
+
+#n{
+  width: 30px;
+  height: 30px;
+  top: 225px;
+  left: 100px;
+}
+
+.flyingAway_n{
+  animation-name: flyingAway_n;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_n {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,320px);}
+}
+
+#r{
+  width: 30px;
+  height: 30px;
+  top: 145px;
+  left: 70px;
+}
+
+.flyingAway_r{
+  animation-name: flyingAway_r;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_r {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,320px);}
+}
+
+#s{
+  width: 30px;
+  height: 30px;
+  top: 119px;
+  left: 85px;
+
+}
+
+.flyingAway_s{
+  animation-name: flyingAway_s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+@keyframes flyingAway_s {
+  0% { transform: translate(100px, 250px);}
+  50% { transform: translate(550px, 450px);}
+  100% { transform: translate(800px,380px);}
 }
