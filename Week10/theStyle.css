@@ -24,9 +24,9 @@ body{
 /* animating building with inspiration from https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3 */
 #building{
   width: 950px;
-  height: 1050px;
+  height: 850px;
   position: absolute;
-  bottom: -1000px;
+  top: 25px;
   right: 210px;
   display: none;
 }
@@ -40,9 +40,9 @@ body{
 }
 
 @keyframes growing {
-  0% { transform: translate(0px, -1000px);}
+  0% { transform: translate(0px, 800px);}
   50% { transform: translate(0px, 500px);}
-  100% { transform: translate(0px, 1000px);}
+  100% { transform: translate(0px, 0px);}
 }
 
 /* scroll image */
