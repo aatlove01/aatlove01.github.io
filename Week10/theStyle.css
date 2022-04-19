@@ -24,7 +24,7 @@ body{
 /* animating building with inspiration from https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3 */
 #building{
   width: 950px;
-  height: 850px;
+  height: 950px;
   position: absolute;
   top: 25px;
   right: 210px;
@@ -33,7 +33,7 @@ body{
 
 .growing{
   animation-name: growing;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 
@@ -41,8 +41,15 @@ body{
 
 @keyframes growing {
   0% { transform: translate(0px, 800px);}
-  50% { transform: translate(0px, 500px);}
-  100% { transform: translate(0px, 0px);}
+  50% { transform: translate(0px, 400px);}
+  100% { transform: translate(0px, 2px);}
+}
+
+/* dust */
+#buildingDust{
+  width: 950px;
+  height: 400px;
+
 }
 
 /* scroll image */

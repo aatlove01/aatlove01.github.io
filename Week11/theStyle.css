@@ -1,0 +1,53 @@
+body{
+  background-color: #EAF6FF;
+
+}
+
+#typeSomething{
+  background-color: white;
+  border-radius: 20px;
+  font-family: 'Courier New';
+  font-size: 30px;
+  position: absolute;
+  top: 30%;
+  left: 12%;
+}
+
+/* on addConfessions.html */
+#button{
+  background-color: #590ED3;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Staatliches';
+  font-size: 30px;
+  position: absolute;
+  top: 20%;
+  right:13%;
+  cursor: pointer;
+}
+
+/* on homepageConfessions.html  */
+#button2{
+  background-color: #590ED3;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Staatliches';
+  font-size: 30px;
+  position: absolute;
+  bottom: 20%;
+  left:45%;
+  cursor: pointer;
+}
+
+#Heading{
+  font-family: 'Staatliches';
+  font-size: 80px;
+}
+
+#Subheading{
+  font-family: 'Staatliches';
+  font-size: 30px;
+  position: absolute;
+  top:25%;
+  left:40%;
+}

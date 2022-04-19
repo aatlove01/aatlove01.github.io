@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    font-family: 'Staatliches', cursive;
+    font-size: large;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009ffdff;
+    color: #2a2a72ff;
+    height: 100vh;
+    width: auto;
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #eaf6ffff;
+    height: 100vh;
+    width: auto;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf6ffff;
+    height: 100vh;
+    width: auto;
+}
+
+button {
+  font-family: 'Staatliches';
+  font-size: 30px;
+    text-align: center;
+    background-color: #590ed3ff;
+    color: #eaf6ffff;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: none;
+    cursor: pointer;
+}

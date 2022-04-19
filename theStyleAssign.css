@@ -3,6 +3,8 @@ body{
   font-family: "Sofia",cursive;
   font-size: 18px;
   font-weight: bold;
+  scroll-behavior: smooth;
+  
 
 }
 
@@ -236,6 +238,19 @@ body{
   height: 250px;
 }
 
+#hw9{
+
+}
+
+#hw9 img{
+  position: fixed;
+  border-radius: 10px;
+  margin-left: 45px;
+  margin-top: 910px;
+  width: 310px;
+  height: 250px;
+}
+
 /* Assignment Titles */
 
 #hw1Title{
@@ -284,6 +299,12 @@ body{
   position: fixed;
   margin-left: 1545px;
   margin-top: 760px;
+}
+
+#hw9Title{
+  position: fixed;
+  margin-left: 70px;
+  margin-top: 1170px;
 }
 
 /* BUTTONS to ACCESS ASSIGNMENT PAGES */
@@ -397,5 +418,19 @@ cursor: pointer;
   position: fixed;
   bottom: 10%;
   right: 9%;
+  cursor: pointer;
+}
+
+#button9{
+  padding: 8px;
+  margin-left: 30px;
+  background-color: darkorange;
+  border-radius: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  position: fixed;
+  bottom: 10%;
+  left: 6%;
   cursor: pointer;
 }
