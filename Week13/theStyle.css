@@ -1,12 +1,109 @@
 body{
-  background-color: orange;
+  background-color: #F4FFFD;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+
+/* using downlaoded font explaination https://stackoverflow.com/questions/7961721/how-do-i-install-a-custom-font-on-an-html-site */
+@font-face { font-family: Gameria; src: url('GAMERIA.ttf');
+}
+@font-face {font-family: 'Akshar', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Staatliches', cursive;
+}
+
+/* centering vertically and horizontally https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #canvasMain{
-margin-left: auto;
-margin-right:auto;
-   background-color: white;
+  z-index: -1;
+  width:1000px;
+  height:600px;
+  background-color: white;
   border-radius: 10px;
+  border: 1vh solid #011936;
+}
+
+/* play button */
+
+.play{
+  position: absolute;
+  top:50%;
+  left:47%;
+}
+
+#play{
+  padding:15px 32px;
+  border-radius: 20px;
+  background-color: #fffdd0;
+  border: none;
+  color: #ED254E;
+  font-family: 'Gameria';
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Opening scene for game title */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: absolute;
+  top: 80px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,.1));
+  font-size: 15vh;
+}
+.waviy span {
+  font-family: 'Gameria';
+  position: relative;
+  top:20px;
+  left:10px;
+  display: inline-block;
+  color: #ED254E;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* game descriptors below the title */
+.gameDescriptors{
+  font-size: 2.5vh ;
+  font-family: 'Akshar' ;
+  position: absolute;
+  top:28vh ;
+  left:85vh ;
+}
+.xMarkImage{
+  position: absolute;
+  top: 15vh;
+  left: 58vh;
+}
+
+.island{
+  position: absolute;
+  top: ;
+  left: ;
+  opacity: 0.1;
 }

@@ -1,31 +1,64 @@
+</html>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link  rel="stylesheet" type="text/css" href="theStyle.css" >
-    <script src="gameFinal.js" defer></script>
-    <title>Final Project</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="stylesheet" type="text/css" href="theStyle.css" >
+  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Nanum+Gothic&family=Staatliches&display=swap" rel="stylesheet">
+  <script type="scenes.js"></script>
+  <script src="game.js" defer></script>
+  <title>Final Project</title>
+</head>
+<body>
   <body>
-    <canvas id="canvasMain" width="1000" height="600"></canvas>
+    <!-- container with the canvas so HTML elements can be placed on top of the canvas but not on -->
+      <div id="fixedContainer">
+        <canvas id="canvasMain" class="center"</canvas>
+      </div>
+      <!-- play button -->
+      <div class="play">
+        <button id="play">PLAY</button>
+      </div>
 
-<!-- help from https://subscription.packtpub.com/book/game_development/9781849695466/1/ch01lvl1sec15/managing-the-game-scene
- -->
+      <div class="gameDescriptors">
+        <p> &#x2022; explore &#x2022; investigate &#x2022; complete adventures </p>
+      </div>
+      <div class="xMarkImage">
+        <img src="images/x_marks_the_spot.png" alt="x-image" width="860px" height="300px">
+      </div>
+      <div class="island">
+        <img src="images/island.jpg" alt="islandimage" width="1000px" height="600px">
+      </div>
 
-    <div id="game-scene" class="scene out">
-  <a href="#" id="gameover-btn">Game Over</a>
-  <a href="#" id="finish-btn">Finish</a>
-    </div>
-  <div id="start-scene" class="scene">
-    <a href="#" id="start-btn" class="button">Start Game</a>
-  </div>
-  <div id="summary-scene" class="scene out">
-    <a href="#" id="next-level-button" class="button">Next</a>
-  </div>
-  <div id="gameover-scene" class="scene out">
-    <a href="#" id="back-to-menu-button" class="button">Back to menu</a>
-  </div>
+      <!-- the title game text css animation from https://codepen.io/alvarotrigo/pen/xxLvyOG -->
+      <div class="waviy">
+       <span style="--i:1">Q</span>
+       <span style="--i:2">U</span>
+       <span style="--i:3">E</span>
+       <span style="--i:4">S</span>
+       <span style="--i:5">T</span>
+      </div>
+
+    <!-- help from https://subscription.packtpub.com/book/game_development/9781849695466/1/ch01lvl1sec15/managing-the-game-scene
+     -->
+    <!--
+        <div id="game-scene" class="scene out">
+      <a href="#" id="gameover-btn">Game Over</a>
+      <a href="#" id="finish-btn">Finish</a>
+        </div> -->
+      <!-- <div id="start-scene" class="scene">
+        <a href="Week13/openScene.html">Start Game</a>
+      </div> -->
+      <!-- <div id="summary-scene" class="scene out">
+        <a href="#" id="next-level-button" class="button">Next</a>
+      </div>
+      <div id="gameover-scene" class="scene out">
+        <a href="#" id="back-to-menu-button" class="button">Back to menu</a>
+      </div> -->
+
+
 
 
   </body>
