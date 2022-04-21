@@ -7,10 +7,21 @@ body{
 
 }
 
+
+/* centering vertically and horizontally https://www.w3schools.com/howto/howto_css_center-vertical.asp */
 .center{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#sidenote{
+  font-family: "Gameria";
+  font-size: 5vh;
+  color: white;
+  position: absolute;
+  top: 63%;
+  left:37%;
 }
 
 #intro{
@@ -33,6 +44,7 @@ box-sizing:border-box;
 
 #intro p{
   font-family: "Staatliches";
+  /* font-family: "Gameria"; */
   font-size: 30px;
   position: absolute;
   top: 65%;
@@ -59,10 +71,7 @@ box-sizing: border-box;
 
 #concept p{
   font-family: "Staatliches";
-  font-size: 30px;
-  position: absolute;
-  top: 65%;
-  left:45%;
+  font-size: 10vh;
 }
 
 #wireframe{
@@ -136,8 +145,8 @@ box-sizing: border-box;
   font-family: "Staatliches";
   font-size: 30px;
   position: absolute;
-  top: 65%;
-  left:45%;
+  /* top: 440%;
+  left:45%; */
 }
 
 #toolkit{
