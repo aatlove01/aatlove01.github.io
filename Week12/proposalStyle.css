@@ -1,0 +1,166 @@
+body{
+  margin: 0;
+}
+
+/* using downlaoded font explaination https://stackoverflow.com/questions/7961721/how-do-i-install-a-custom-font-on-an-html-site */
+@font-face { font-family: Gameria; src: url('GAMERIA.ttf');
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro{
+margin: 0;
+height: 100vh;
+/* background: #B7D3F2; */
+background: #ED254E;
+box-sizing:border-box;
+}
+
+#intro h1{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 36vh;
+  color: white;
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+#intro p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
+
+#concept{
+height: 100vh;
+/* background: #AFAFDC; */
+background: #F9DC5C;
+box-sizing: border-box;
+
+}
+
+#concept h2{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+#concept p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
+
+#wireframe{
+  height: 100vh;
+  /* background: #8A84E2; */
+  background: #F4FFFD;
+  box-sizing: border-box;
+}
+
+#wireframe h3{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 10vh;
+  color: beige;
+  display: flex;
+  justify-content: center;
+
+}
+
+#wireframe p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
+
+#sitemap{
+  height: 100vh;
+  /* background: #84AFE6; */
+  background: #011936;
+  box-sizing: border-box;
+}
+
+#sitemap h4{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+#sitemap p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
+
+#designStrategy{
+  height: 100vh;
+  /* background: #79BEEE; */
+  background: #465362;
+  box-sizing: border-box;
+}
+
+#designStrategy h5{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+#designStrategy p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
+
+#toolkit{
+  height: 100vh;
+  background: #ED254E;
+  color:
+  box-sizing: border-box;
+}
+
+#toolkit h6{
+  margin: 0;
+  font-family: "Gameria";
+  font-size: 10vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+#toolkit p{
+  font-family: "Staatliches";
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left:45%;
+}
