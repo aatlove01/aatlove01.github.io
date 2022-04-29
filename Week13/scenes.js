@@ -1,1 +1,1 @@
-console.log("Javascripti is here");
+console.log("Javascript is here");

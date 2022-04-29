@@ -7,7 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link  rel="stylesheet" type="text/css" href="theStyle.css" >
   <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Nanum+Gothic&family=Staatliches&display=swap" rel="stylesheet">
-  <script type="scenes.js"></script>
+  <!-- import font icon stylesheet -->
+  <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/0a625bcada.js" crossorigin="anonymous"></script>
+  <!-- load the ES6 module bundle of melonJS v10.0 -->
+  <!-- <script src="https://esm.run/melonjs@10.0"></script> -->
+  <!-- omit the version completely to get the latest one -->
+  <!-- you should NOT use this in production -->
+  <!-- <script src="https://esm.run/melonjs"></script> -->
+  <!-- <script type="scenes.js"></script> -->
+  <!-- Import the Slider -->
   <script src="game.js" defer></script>
   <title>Final Project</title>
 </head>
@@ -21,45 +30,51 @@
       <div class="play">
         <button id="play">PLAY</button>
       </div>
-
-      <div class="gameDescriptors">
-        <p> &#x2022; explore &#x2022; investigate &#x2022; complete adventures </p>
+<!-- GAME DESCRIPTION -->
+      <div class="gameDescriptors" id="gameDescriptors">
+        <p> &#x2022; explore &#x2022; investigate &#x2022; adventures </p>
       </div>
-      <div class="xMarkImage">
+<!-- X MARK THE SPOT IMAGE -->
+      <div class="xMarkImage" id="xMarkImage">
         <img src="images/x_marks_the_spot.png" alt="x-image" width="860px" height="300px">
       </div>
-      <div class="island">
-        <img src="images/island.jpg" alt="islandimage" width="1000px" height="600px">
+<!-- IMAGE OF THE ISLAND BACKGROUND -->
+      <div id="island" class="center">
+        <img src="images/island.jpg" alt="islandimage" width="996px" height="600px">
       </div>
 
       <!-- the title game text css animation from https://codepen.io/alvarotrigo/pen/xxLvyOG -->
-      <div class="waviy">
+      <div class="waviy" id=title>
        <span style="--i:1">Q</span>
        <span style="--i:2">U</span>
        <span style="--i:3">E</span>
        <span style="--i:4">S</span>
        <span style="--i:5">T</span>
       </div>
-
-    <!-- help from https://subscription.packtpub.com/book/game_development/9781849695466/1/ch01lvl1sec15/managing-the-game-scene
-     -->
-    <!--
-        <div id="game-scene" class="scene out">
-      <a href="#" id="gameover-btn">Game Over</a>
-      <a href="#" id="finish-btn">Finish</a>
-        </div> -->
-      <!-- <div id="start-scene" class="scene">
-        <a href="Week13/openScene.html">Start Game</a>
-      </div> -->
-      <!-- <div id="summary-scene" class="scene out">
-        <a href="#" id="next-level-button" class="button">Next</a>
+<!-- SLIDESHOW ANIMINATION WITH ISLANDS -->
+      <div id="mapSlider" >
+          <div id="slideImg" >
+            <!-- LIST OF IMAGES IN ORDER -->
+            <img  class='slide' src="images/scroll image_seamless.png" alt="map-start" height="590px" width="990px" >
+            <img class='slide' src="images/scroll image_seamless_middle.png" alt="map-middle"  height="590px" width="990px">
+            <img  class='slide' src="images/scroll image_seamless_end.png" alt="map-end"  height="590px" width="990px">
+          </div>
+          <!-- id="mySlide" -->
       </div>
-      <div id="gameover-scene" class="scene out">
-        <a href="#" id="back-to-menu-button" class="button">Back to menu</a>
-      </div> -->
+      <div id="left">
+            <!-- <a id="button-left" <i class="fa-solid fa-arrow-left-long"></i></a>
+            <a id="button-right" <i class="fa-solid fa-arrow-right-long"></i></a> -->
+            <a id="button-left" onclick="plusSlide(-1)" <i class="fa-solid fa-circle-left"></i></a>
+      </div>
+      <div id="right">
+      <a id="button-right" onclick="plusSlide(1)" <i class="fa-solid fa-circle-right"></i></a> 
+      </div>
 
-
-
-
-  </body>
+      <!-- island items to choose from -->
+      <div id="kidnapIsland" > 
+        <img src="images/kidnap_island.png"  alt="kidnap_island" width="250px" height="200px">
+      </div>
+      
+    
+</body>
 </html>
