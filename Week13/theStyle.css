@@ -225,3 +225,11 @@ font-family: 'Staatliches', cursive;
   left: 60vh;
   cursor: pointer;
 }
+
+/* kidnap island starting bakground */
+#start-background-kidnap{
+  display: none;
+  position: absolute;
+  
+}
+

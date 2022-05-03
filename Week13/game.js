@@ -14,9 +14,15 @@ const islandMap = document.getElementById('slideImg');
 const map_left_button = document.getElementById('button-left');
 const map_right_button = document.getElementById('button-right');
 // const dotButton_nav = document.getElementsByClassName('dotButtons');
+// to remove the map and the after choosing kidnap island 
 const islandOneKidnap = document.getElementById('kidnapIsland');
+// starting scene one of kidnapIsland
+// const sceneOne_kidnapIsland = document.getElementById('kidnapIsland-start-scene');
 
 
+
+
+// code concerning the character from http://www.williammalone.com/articles/create-html5-canvas-javascript-game-character/1/
 
 
 // from https://codeburst.io/creating-and-drawing-on-an-html5-canvas-using-javascript-93da75f001c1
@@ -39,6 +45,7 @@ console.log('right button clicked');
 // console.log('dot navigation')
 islandOneKidnap.addEventListener('click',kidnapGame);
 console.log('going to kidnap island');
+
 
 function leave_home(){
 
@@ -64,6 +71,8 @@ function leave_home(){
   console.log('kidnap island appear on map');
 }
 
+
+// code to slide through the map; have to find a way to have the image stick to one page and not every page once more islands are added
 // js script code inspired and modified from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self and MDN article regarding document.querySelector instead of get elementsbyclassname
 // more help on working through it from this site https://codekky.medium.com/how-to-create-manual-image-slider-ae13f5de9795
 let slideIndex = 1;
@@ -96,6 +105,7 @@ function showMapOne(n){
 
 }
 
+// starting kipnap Island
 function kidnapGame(){
   islandMap.style.display = 'none';
   console.log('map of islands disappeared');
@@ -105,4 +115,9 @@ function kidnapGame(){
   console.log('right button gone');
   islandOneKidnap.style.display = 'none';
   console.log('island and map disappered');
+  // sceneOne_kidnapIsland.style.display = 'block';
+  // console.log('');
+  player.draw();
+  animate();
 }
+  
