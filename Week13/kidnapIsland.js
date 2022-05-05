@@ -306,7 +306,7 @@ function animate(){
     // door.draw()
     
     
-    if (keys.right.pressed && player.position.x < 600) {
+    if (keys.right.pressed && player.position.x < 400) {
         player.velocity.x = 5
     } else if (keys.left.pressed  && player.position.x > 100) {
         player.velocity.x = -5
@@ -325,35 +325,43 @@ function animate(){
             })
             x -= 5;
             // console.log('x when moving to right is',x)
-            //  && (player.position.x == 600)
-            if ((x< -4485) ){
-                x= -4485
+            //  && (player.position.x == 400)
+            if (x< -4085 ){
+                x= -4085
+                if (keys.right.pressed) {
+                    player.velocity.x += 5
+                    // player.position.x < 400
+                if (x<-4585){
+                    player.velocity.x = 0
+                }
             }
+        }
+            console.log('going right',x)
             
         }else if (keys.left.pressed){
-            scrollOffset -=5
             platforms.forEach((platform) => {
                 // original entry was 5 for platform position
                 platform.position.x +=5
-                // TalkToLady.position.x+=2
-                if ((x==0) ){
-                    TalkToLady.position.x+=0
-                }else{
-                    TalkToLady.position.x+=2
-                }
-                // door.position.x+=0.5
-                // x += 2;
+                TalkToLady.position.x+=2
             })
-            x += 5;
+            // code moving the background is x
+            // x += 5;
             // if (x < 3000) x = 0
             // if (x < 3000){ x = 0}
-            if ((x > 0) && (player.position.x < 600) ){
-                x= 0
-            }
+            //  && (player.position.x < 600)
+            if ((x > 0) ){
+                x= -5
+                TalkToLady.position.x +=2;
+                if (x == -5 ){ TalkToLady.position.x = 800  }
+           }else{
+               TalkToLady.position.x +=0;
+               x+=5
+           }
             // console.log('x when moving to left is',x)
             
             // if (x > 0) x = 3000
-        }    
+        }
+        console.log('going left',x)    
     }
 
     // console.log(scrollOffset)
@@ -371,7 +379,7 @@ platforms.forEach((platform) => {
         player.position.x <= platform.position.x + platform.width
 
     ){
-        player.velocity.y =0
+        player.velocity.y = 0
     }
 })
 // sprite switching - mario tutorial 
@@ -493,7 +501,7 @@ function LadySpeak(){
 
 // mario tutorial 
 addEventListener('keydown', ({keyCode})  => {
-    console.log(keyCode)
+    // console.log(keyCode)
         switch (keyCode){
             case 37:
                 // console.log('left')
