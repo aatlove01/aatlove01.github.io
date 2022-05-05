@@ -20,8 +20,8 @@ const image = {
 
 const femaleSpeaker = new Image();
 femaleSpeaker.src =  'images/Idle.png'
-const enterDoorHome = new Image();
-enterDoorHome.src =  'images/door_to_enter.png'
+// const enterDoorHome = new Image();
+// enterDoorHome.src =  'images/door_to_enter.png'
 
 
 // help from Parallax in JavaScript Games - (parallax tutorial)
@@ -217,7 +217,7 @@ draw(){
 
 const player = new Player();
 const TalkToLady = new femaleSpeak();
-const door = new ExploreHome();
+// const door = new ExploreHome();
 
 const platforms = [
     new Platform({
@@ -286,7 +286,7 @@ function animate(){
     TalkToLady.draw()
 
     // door to enter through
-    door.draw()
+    // door.draw()
     
     
     if (keys.right.pressed && player.position.x < 600) {
