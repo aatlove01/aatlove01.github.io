@@ -151,6 +151,10 @@ class femaleSpeak{
         c.drawImage(this.image,this.position.x, this.position.y, this.width, this.height)
        
     }
+    clickGirl(xmouse,ymouse){
+        console.log(xmouse,ymouse)
+    }
+
     update(){
         
         this.draw();
@@ -162,6 +166,18 @@ class femaleSpeak{
         else this.velocity.y = 0
     }
 }
+
+// checking to see if the girl is clicked to access text
+// help from video https://www.youtube.com/watch?v=xbdJf9MRL7A&ab_channel=BananaCoding
+canvas.addEventListener('click',(event) =>{
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    TalkToLady.clickGirl(x,y);
+    if ((772 <x <844) && (486 <y <585)){
+
+    }
+})
 
 class ExploreHome{
     constructor(){
@@ -284,6 +300,7 @@ function animate(){
 
     // female speaking
     TalkToLady.draw()
+   
 
     // door to enter through
     // door.draw()
@@ -308,8 +325,9 @@ function animate(){
             })
             x -= 5;
             // console.log('x when moving to right is',x)
-            if ((x< -4685) && (player.position.x == 600) ){
-                x= -4685
+            //  && (player.position.x == 600)
+            if ((x< -4485) ){
+                x= -4485
             }
             
         }else if (keys.left.pressed){
@@ -317,7 +335,12 @@ function animate(){
             platforms.forEach((platform) => {
                 // original entry was 5 for platform position
                 platform.position.x +=5
-                TalkToLady.position.x+=2
+                // TalkToLady.position.x+=2
+                if ((x==0) ){
+                    TalkToLady.position.x+=0
+                }else{
+                    TalkToLady.position.x+=2
+                }
                 // door.position.x+=0.5
                 // x += 2;
             })
@@ -453,16 +476,19 @@ if(
 // },600)
 
 
-// const LadySpeech = document.getElementById('female-speaker1')
+const LadySpeech = document.getElementById('female-speaker1')
 
-// // activate the speech text
+// activate the speech text
 // LadySpeech.addEventListener('click', LadySpeak);
 // console.log('lady clicked')
 
-// function LadySpeak(){
-//     LadySpeech.style.display ='block';
-//     console.log('lady should speak');
-// }
+function LadySpeak(){
+    // LadySpeech.style.display ='block';
+    // console.log('lady should speak');
+    // speakOne = new Image();
+    // speakOne.src = 'images/speech_1.png'
+    
+}
 
 
 // mario tutorial 

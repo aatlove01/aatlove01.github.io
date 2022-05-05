@@ -22,6 +22,7 @@ const islandOneKidnap = document.getElementById('kidnapIsland');
 
 
 
+
 // code concerning the character from http://www.williammalone.com/articles/create-html5-canvas-javascript-game-character/1/
 
 
@@ -45,6 +46,8 @@ console.log('right button clicked');
 // console.log('dot navigation')
 islandOneKidnap.addEventListener('click',kidnapGame);
 console.log('going to kidnap island');
+
+
 
 
 function leave_home(){

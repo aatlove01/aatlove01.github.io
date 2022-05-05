@@ -106,7 +106,7 @@ font-family: 'Staatliches', cursive;
 #island{
   position: absolute;
   /* top: ; */
-  left: 53vh;
+  left: 50vh;
   opacity: 0.1;
 }
 
@@ -273,6 +273,8 @@ and https://www.youtube.com/watch?v=8i2K7uwh124&ab_channel=DrewConley */
 #player-speak{
   position: absolute;
   display: none;
+  top:50%;
+  left:46%;
   cursor: pointer;
 }
 
@@ -281,23 +283,23 @@ and https://www.youtube.com/watch?v=8i2K7uwh124&ab_channel=DrewConley */
   position: absolute;
   display: none;
   z-index: 1;
-  top: 500px;
-  left: 600px;
+  top:40%;
+  left:40%;
   cursor: pointer;
 }
 #female-speak2{
   position: absolute;
   display: none;
   z-index: 1;
-  top: 500px;
-  left: 600px;
+  top:50%;
+  left:46%;
   cursor: pointer;
 }
 #female-speak3{
   position: absolute;
   display: none;
   z-index: 1;
-  top: 500px;
-  left: 600px;
+  top:50%;
+  left:46%;
   cursor: pointer;
 }
