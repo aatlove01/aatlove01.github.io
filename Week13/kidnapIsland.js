@@ -20,6 +20,8 @@ const image = {
 
 const femaleSpeaker = new Image();
 femaleSpeaker.src =  'images/Idle.png'
+const enterDoorHome = new Image();
+enterDoorHome.src =  'images/door_to_enter.png'
 
 
 // help from Parallax in JavaScript Games - (parallax tutorial)
@@ -161,6 +163,36 @@ class femaleSpeak{
     }
 }
 
+class ExploreHome{
+    constructor(){
+        this.position = {
+            x: 2500,
+            y: 650
+        }
+        this.velocity = {
+            x: 0,
+            y: 0
+        }
+        this.width= 150
+        this.height= 180
+        this.image= enterDoorHome
+    }
+    draw(){
+        c.drawImage(this.image,this.position.x, this.position.y, this.width, this.height)
+       
+    }
+    // update(){
+        
+    //     this.draw();
+    //     this.position.y += this.velocity.y
+    //     this.position.x += this.velocity.x
+
+    //     if (this.position.y + this.height + this.velocity.y <= canvas.height)
+    //     this.velocity.y += gravity 
+    //     else this.velocity.y = 0
+    // }
+}
+
 class Platform {
     constructor({x,y}){
         this.position = {
@@ -184,7 +216,8 @@ draw(){
 // console.log(images)
 
 const player = new Player();
-const TalkToLady = new femaleSpeak()
+const TalkToLady = new femaleSpeak();
+const door = new ExploreHome();
 
 const platforms = [
     new Platform({
@@ -251,6 +284,9 @@ function animate(){
 
     // female speaking
     TalkToLady.draw()
+
+    // door to enter through
+    door.draw()
     
     
     if (keys.right.pressed && player.position.x < 600) {
@@ -266,6 +302,8 @@ function animate(){
                 // original entry was 5 for platform position
                 platform.position.x -=5
                 TalkToLady.position.x-=2
+                // door.position.x-=2
+
                 // x -= 2;
             })
             x -= 5;
@@ -280,6 +318,7 @@ function animate(){
                 // original entry was 5 for platform position
                 platform.position.x +=5
                 TalkToLady.position.x+=2
+                // door.position.x+=0.5
                 // x += 2;
             })
             x += 5;
