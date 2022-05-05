@@ -119,5 +119,6 @@ function kidnapGame(){
   // console.log('');
   player.draw();
   animate();
+
 }
   
