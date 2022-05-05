@@ -106,7 +106,7 @@ font-family: 'Staatliches', cursive;
 #island{
   position: absolute;
   /* top: ; */
-  left: 50vh;
+  left: 53vh;
   opacity: 0.1;
 }
 
@@ -233,3 +233,71 @@ font-family: 'Staatliches', cursive;
   
 }
 
+/* help for speech text box from https://codepen.io/punkydrewster713/pen/zYKdywP 
+and https://www.youtube.com/watch?v=8i2K7uwh124&ab_channel=DrewConley */
+
+/* .text span{
+  opacity:0;
+}
+.text span.revealed {
+  opacity:1;
+}
+.text span.green{
+  color:#27ae60;
+}
+.text span.red{
+  color:#ff0000;
+}
+
+.text{
+  font-family: 'Comic Sans';
+  font-size: 10px;
+  word-spacing:0.2em;
+  margin:0 auto;
+  background: #fff;
+  padding: 1em;
+  border-bottom :1vw solid #0e6dad;
+  position: relative;
+  line-height:1.2em;
+}
+.corner{
+  display: none;
+  position: absolute;
+  width: 10vw;
+  right:2vw;
+  bottom:0;
+  transform: translateY(80%);
+} */
+
+/* player speaks*/
+#player-speak{
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+
+/* lady speaks */
+#female-speak1{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 500px;
+  left: 600px;
+  cursor: pointer;
+}
+#female-speak2{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 500px;
+  left: 600px;
+  cursor: pointer;
+}
+#female-speak3{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 500px;
+  left: 600px;
+  cursor: pointer;
+}
