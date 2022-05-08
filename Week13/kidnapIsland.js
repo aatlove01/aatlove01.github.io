@@ -20,6 +20,8 @@ const image = {
 
 const femaleSpeaker = new Image();
 femaleSpeaker.src =  'images/Idle.png'
+const femaleSpeak_One = new Image();
+femaleSpeak_One.src =  'images/speech_1.png'
 // const enterDoorHome = new Image();
 // enterDoorHome.src =  'images/door_to_enter.png'
 
@@ -137,7 +139,7 @@ class femaleSpeak{
     constructor(){
         this.position = {
             x: 800,
-            y: 100
+            y: 720
         }
         this.velocity = {
             x: 0,
@@ -161,23 +163,29 @@ class femaleSpeak{
         this.position.y += this.velocity.y
         this.position.x += this.velocity.x
 
-        if (this.position.y + this.height + this.velocity.y <= canvas.height)
-        this.velocity.y += gravity 
-        else this.velocity.y = 0
+        // if (this.position.y + this.height + this.velocity.y <= canvas.height)
+        // this.velocity.y += gravity 
+        // else this.velocity.y = 0
     }
 }
 
-// checking to see if the girl is clicked to access text
-// help from video https://www.youtube.com/watch?v=xbdJf9MRL7A&ab_channel=BananaCoding
-canvas.addEventListener('click',(event) =>{
-    const rect = canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
-    TalkToLady.clickGirl(x,y);
-    if ((772 <x <844) && (486 <y <585)){
-
+class TextOne{
+    constructor(){
+        this.position = {
+            x: 800,
+            y: 0
+        }
+        
+        this.width= 150
+        this.height= 200
+        this.image= femaleSpeak_One
     }
-})
+    draw(){
+        c.drawImage(this.image,this.position.x, this.position.y, this.width, this.height)
+       
+    }
+}
+
 
 class ExploreHome{
     constructor(){
@@ -232,7 +240,10 @@ draw(){
 // console.log(images)
 
 const player = new Player();
+// /this is the inage of the girl
 const TalkToLady = new femaleSpeak();
+// this is for the girl to say her first text box
+const girlTalkOne = new TextOne();
 // const door = new ExploreHome();
 
 const platforms = [
@@ -299,7 +310,20 @@ function animate(){
     })
 
     // female speaking
-    TalkToLady.draw()
+    // checking to see if the girl is clicked to access text
+    // help from video https://www.youtube.com/watch?v=xbdJf9MRL7A&ab_channel=BananaCoding
+    canvas.addEventListener('click',(event) =>{
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    TalkToLady.clickGirl(x,y);
+    if ((772 <x <844) && (486 <y <585)){
+        
+            girlTalkOne.draw()
+            console.log('she should speak')
+       
+    }
+})
    
 
     // door to enter through
@@ -336,7 +360,7 @@ function animate(){
                 }
             }
         }
-            console.log('going right',x)
+            // console.log('going right',x)
             
         }else if (keys.left.pressed){
             platforms.forEach((platform) => {
@@ -344,7 +368,7 @@ function animate(){
                 platform.position.x +=5
                 TalkToLady.position.x+=2
             })
-            // code moving the background is x
+            
             // x += 5;
             // if (x < 3000) x = 0
             // if (x < 3000){ x = 0}
@@ -355,13 +379,14 @@ function animate(){
                 if (x == -5 ){ TalkToLady.position.x = 800  }
            }else{
                TalkToLady.position.x +=0;
+               // code moving the background is x
                x+=5
            }
             // console.log('x when moving to left is',x)
             
             // if (x > 0) x = 3000
         }
-        console.log('going left',x)    
+        // console.log('going left',x)    
     }
 
     // console.log(scrollOffset)
